@@ -1,21 +1,18 @@
 
+ 🖨️ Exercise 2: Implementing the Factory Method Pattern
 
-```markdown
-# 🖨️ Exercise 2: Implementing the Factory Method Pattern
-
-## 📌 Scenario
+📌 Scenario
 We are developing a robust **Document Management System** that can dynamically create and process different types of digital documents (e.g., Word, PDF, Excel) without hardcoding the initialization logic inside the main client application.
 
 ---
-
-## 🛠️ Design & Implementation Details
+ 🛠️ Design & Implementation Details
 * **Pattern Used:** Factory Method Pattern (Creational)
 * **Loose Coupling:** The client interactions rely entirely on abstract abstractions (`Document` and `DocumentFactory`). 
 * **Scalability:** To add a new document type tomorrow (like a PowerPoint or HTML file), we simply add a new product class and its companion creator factory without modifying a single line of pre-existing code!
 
 ---
 
-## 📂 File Blueprint
+📂 File Blueprint
 * `Document.java`: The primary interface defining standard document operations (`open()` / `close()`).
 * `WordDocument.java`, `PdfDocument.java`, `ExcelDocument.java`: Concrete product representations.
 * `DocumentFactory.java`: The abstract creator defining our core factory method hook.
@@ -24,7 +21,7 @@ We are developing a robust **Document Management System** that can dynamically c
 
 ---
 
-## 🚀 How to Compile & Run
+ 🚀 How to Compile & Run
 
 Open your terminal directly inside this folder and run:
 
