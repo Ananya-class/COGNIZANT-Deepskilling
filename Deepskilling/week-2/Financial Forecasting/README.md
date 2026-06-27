@@ -18,6 +18,32 @@ Predicting long-term market asset trajectories requires tracking cumulative retu
 | `ANALYSIS.md` | **Technical Paper** | Details the time-complexity transition from exponential scaling behaviors down to linear processing speed. |
 
 ---
+## 🛠️ Local Environment Setup & Execution
 
-## 🛠️ Execution Context
-Open this folder in **VS Code**, make sure your Java tooling is active, open `Main.java`, and run the file using `F5` or by using the inline editor links.
+Follow these steps to run and test this module inside **Visual Studio Code**:
+
+### Prerequisites
+1. **Java Development Kit (JDK)**: Ensure JDK 17 or higher is installed.
+2. **VS Code Extensions**: Install the **Extension Pack for Java** by Microsoft.
+
+### Compilation and Execution via Terminal
+1. Open Visual Studio Code and make sure your terminal is inside the `Financial Forecasting` directory.
+2. Compile the Java files:
+   ```powershell
+   javac Main.java GrowthData.java FinancialForecaster.java
+
+## Run the application:
+
+PowerShell
+java Main
+
+
+## Expected Console Output
+Plaintext
+--- Standard Recursive Forecasting ---
+Value after 10 years: $17779.14
+
+--- Optimized Memoized Forecasting ---
+Value after 10 years: $17779.14
+## 👥 Authors & Collaborators
+Ananya Pantula - Lead Developer / SAC President
